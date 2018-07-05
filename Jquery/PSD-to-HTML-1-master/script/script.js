@@ -55,24 +55,24 @@ wrap() -wrap all matched elements individualy
 unwrap() - unwrap all matched elements
 wrapAll() - wpras all elements combined with 1 single element
 */
-
-var wrapper = "<div class='wrapper'>";
-var button = $(".button");
-var wrapped= true;
-
-button[0].onclick = function(){
-  if(wrapped)
-  {
-    $("section").unwrap();
-    wrapped= false;
-    button.text("Wrap");
-  } else{
-    $("section").wrapAll(wrapper);
-    wrapped= true;
-    button.text("Unwrap");
-  }
-
-};
+//
+//var wrapper = "<div class='wrapper'>";
+//var button = $(".button");
+//var wrapped= true;
+//
+//button[0].onclick = function( ) {
+//  if (wrapped)
+//  {
+//    $("section").unwrap();
+//    wrapped= false;
+//    button.text("Wrap");
+//  } else {
+//    $("section").wrapAll(wrapper);
+//    wrapped= true;
+//    button.text("Unwrap");
+//  }
+//
+//};
 
 
 /*
@@ -94,3 +94,47 @@ $("#contact img").remove();
 
 
 // console.log($('#social-nav').css("top","-200px").css("left","100px"));
+//$("header .wrapper").removeClass("wrapper");
+//$("header > div").addClass("wrapper");
+
+var button = $("#lead-banner a");
+
+button[0].onclick = function(){
+    
+  $("#points-of-sale").toggleClass("open");
+    return false;
+};
+
+
+/*
+removeClass()
+addClasss() 
+toggleClass on off class
+
+
+ var myLis = $("#points-of-sale li");
+
+myLis.on("click",function (){
+    $(this).css({background:"pink"});
+    myLis.off("click")
+    
+});
+
+/*
+on() binds events to matched element
+off()
+*/
+
+//https://www.w3schools.com/JQuery/jquery_ref_events.asp
+
+        //Window event, document ready
+//$(window).load(function(){
+    
+//});
+
+$(document).ready(function(){
+    $("*").on("click",function(e){
+        console.log("The event type is:"e.type);
+        e.stopPropagation();
+    });
+})
