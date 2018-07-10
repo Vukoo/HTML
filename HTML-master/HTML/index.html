@@ -58,6 +58,58 @@
               <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
               <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
           </div>
+                
+                <form id="areaForm" action="battleship.html">
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInput">Kolumny</label>
+      <input id="colId" type="text" class="form-control mb-2" placeholder="Kolumny" name="col">
+    </div>
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">Wiersze</label>
+      <div class="input-group mb-2">
+        <input id="rowId" type="text" class="form-control" placeholder="Wiersze" name="row">
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2" onclick="setArea()">Submit</button>
+    </div>
+  </div>
+                </form>          
+            
+        
+          <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+         
+          
       </div>
       <!-- /#page-content-wrapper -->
       <div class="row">
@@ -73,6 +125,7 @@
 
 <script src="jquery/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/custom.js"></script>
 
 <script>
 $("#menu-toggle").click(function(e) {
