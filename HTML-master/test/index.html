@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="app">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="Piotr Gądek" content="Clear HTML">
+<link href="public/css/bootstrap.min.css" rel="stylesheet">
+<link href="public/css/simple-sidebar.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="public/css/custom-css.css" rel="stylesheet">
+<title>My APP</title>
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                  <a href="#">
+                      Start Bootstrap
+                  </a>
+              </li>
+              <li>
+                  <a href="#">Dashboard</a>
+              </li>
+              <li>
+                  <a href="#">Shortcuts</a>
+              </li>
+              <li>
+                  <a href="#">Overview</a>
+              </li>
+              <li>
+                  <a href="#">Events</a>
+              </li>
+              <li>
+                  <a href="#">About</a>
+              </li>
+              <li>
+                  <a href="#">Services</a>
+              </li>
+              <li>
+                  <a href="#">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+          <div class="container-fluid">
+              <h1>Simple Sidebar</h1>
+              <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+              <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+              <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+          </div>
+                
+                <form id="areaForm" action="battleship.html">
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInput">Kolumny</label>
+      <input id="colId" type="text" class="form-control mb-2" placeholder="Kolumny" name="col">
+    </div>
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">Wiersze</label>
+      <div class="input-group mb-2">
+        <input id="rowId" type="text" class="form-control" placeholder="Wiersze" name="row">
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2" onclick="setArea()">Submit</button>
+    </div>
+  </div>
+                </form>          
+            
+        
+          <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Piotr</td>
+      <td>Gądek</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>Butcher</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+         
+          
+      </div>
+      <!-- /#page-content-wrapper -->
+      <div class="row">
+      <div class="col-md">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+    </div>
+    </div>
+
+  </div>
+
+
+
+<script src="public/jquery/jquery.min.js"></script>
+<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="public/js/custom.js"></script>
+
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+</body>
+</html>
